@@ -21,6 +21,9 @@
       rel="stylesheet"
     />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -87,12 +90,12 @@
               <label for="email">Email</label><br>
               <div class="input-container">
                 <i class="fas fa-envelope"></i>
-                <input type="email" name="email" placeholder="Enter your email..." class="rectangle">
+                <input type="email" name="email" placeholder="Enter your email..." class="rectangle" required>
               </div>
               <label for="email">Phone</label><br>
               <div class="input-container">
                 <i class="fas fa-phone-alt"></i>
-                <input type="tel" name="phone" placeholder="Enter your phone..." pattern="[0-9]" class="rectangle">
+                <input type="tel" name="phone" placeholder="Enter your phone..." pattern="[0-9]*" class="rectangle">
               </div>  
             </div>
   
@@ -106,29 +109,37 @@
               <label for="address">Address:</label><br>
               <div class="input-container">
                 <i class="fas fa-home"></i>
-                <input type="text" name="address" placeholder="Your address..." class="rectangle">
+                <input type="text" name="address" placeholder="Your address..." class="rectangle" required>
               </div>  
 
               <label for="address">City</label><br>
               <div class="input-container">
                 <i class="fas fa-city"></i>
-                <input type="text" name="address" placeholder="Your City..." class="rectangle">
+                <input type="text" name="address" placeholder="Your City..." class="rectangle" required>
               </div> 
               <section class="lastinputs">
                 <div class="last-wrapper">
                   <label for="address">Country</label><br>
                   <div class="input-container">
                     <i class="fas fa-globe-europe"></i>
-                    <input type="" name="address" placeholder="Your Country..." class="rectangle">
-                    <i class="fas fa-sort-down"></i>
+                    <select name="country" id="country" class="rectangle">
+                      <option value="" disabled selected>Your Country...</option>
+                      <option value="us">US</option>
+                      <option value="china">China</option>
+                      <option value="japan">Japan</option>
+                      <option value="myanmar">Myanmar</option>
+                    </select>
+                   
                   </div> 
                 </div>
                 
                 <div class="last-wrapper">
                   <label for="address">Postal Code</label><br>
                   <div class="input-container">
-                    <i class="fas fa-globe-europe"></i>
-                    <input type="" name="address" placeholder="Your Postal Code..." class="rectangle">
+                    <i class="material-icons">
+                      markunread_mailbox
+                    </i>
+                    <input type="text" pattern =[0-9]* name="address" placeholder="Your Postal Code..." class="rectangle">
                    
                   </div> 
                 </div>
@@ -137,7 +148,6 @@
               <div class="input-container save">
                 <input type="checkbox" class="checkbox"><span>Save This Information</span>
               </div>
-             
 
             </div>
 
