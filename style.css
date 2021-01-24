@@ -139,11 +139,12 @@ header h1{
     margin-top: 10px;
 }
 
-.input-container i.fa-sort-down{
-  float: right;
-  margin-left: 150px;
+#country{
+    height: 35px;
+    width: 100%;
+   
+    padding-left: 25px;
 }
-
 .lastinputs{
     display: flex;
     justify-content: space-between;
